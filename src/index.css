@@ -1,0 +1,41 @@
+@import "/node_modules/modern-normalize/modern-normalize.css";
+
+:root {
+  --primary1: #f4c550;
+  --light-primary1: #fbe9ba;
+
+  --primary2: #9fbaae;
+  --light-primary2: #cbded3;
+
+  --primary3: #9fb7ce;
+  --light-primary3: #bfd6ea;
+
+  --primary4: #e0a39a;
+  --light-primary4: #f2c0bd;
+
+  --primary5: #f0aa8d;
+  --light-primary5: #f4c8ba;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  line-height: 0;
+}
+* {
+  margin: 0;
+}

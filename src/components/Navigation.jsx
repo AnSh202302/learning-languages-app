@@ -6,8 +6,8 @@ const Navigation = () => {
       <Link to="/" end="true">
         Home
       </Link>
-      <Link to="/teachers">Teachers</Link>
-      <Link to="/favorites">Favorites</Link>
+      <Link to="teachers">Teachers</Link>
+      <Link to="favorites">Favorites</Link>
     </nav>
   );
 };

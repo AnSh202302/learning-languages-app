@@ -1,6 +1,9 @@
 @import "/node_modules/modern-normalize/modern-normalize.css";
 
 :root {
+  --white: #fff;
+  --black: #121417;
+
   --primary1: #f4c550;
   --light-primary1: #fbe9ba;
 
@@ -18,7 +21,10 @@
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", system-ui, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: var(--white);
+  color: var(--black);
 }
 
 ul {

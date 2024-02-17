@@ -1,8 +1,8 @@
 import styled from "styled-components";
+
 export const HeaderStyled = styled("header")({
   maxWidth: 1184,
-  margin: "0 auto",
-  padding: "20px 0",
+  margin: "20px auto",
   display: "flex",
   justifyContent: "space-between",
 });

@@ -3,6 +3,7 @@
 :root {
   --white: #fff;
   --black: #121417;
+  --grey: #f8f8f8;
 
   --primary1: #f4c550;
   --light-primary1: #fbe9ba;
@@ -21,10 +22,13 @@
 }
 
 body {
+  margin: 0 auto;
   font-family: "Roboto", system-ui, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   background-color: var(--white);
   color: var(--black);
+  line-height: 1.37;
+  letter-spacing: -0.02em;
 }
 
 ul {
@@ -44,4 +48,11 @@ img {
 }
 * {
   margin: 0;
+}
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
 }

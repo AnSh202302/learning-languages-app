@@ -1,5 +1,6 @@
 import {
   Amount,
+  LinkStyle,
   ListStyle,
   SectionStyle,
   Text,
@@ -7,10 +8,12 @@ import {
 } from "./HomePage.styled";
 
 const HomePage = () => {
+  const random = Math.floor(Math.random() * 4);
+  const imageURL = `img${random}.jpg`;
   return (
     <main>
       <SectionStyle>
-        <Wrapper>
+        <Wrapper $randomNumber={random}>
           <h1>
             Unlock your potential with the best <span>language</span> tutors
           </h1>
@@ -19,10 +22,12 @@ const HomePage = () => {
             Elevate your language proficiency to new heights by connecting with
             highly qualified and experienced tutors.
           </p>
-          <button>Get started</button>
+          <LinkStyle to="/teachers" $randomNumber={random}>
+            Get started
+          </LinkStyle>
         </Wrapper>
-        <img src="img1.jpg" alt="home image"></img>
-        <ListStyle>
+        <img src={imageURL} alt="home image"></img>
+        <ListStyle $randomNumber={random}>
           <li>
             <Amount>32,000 +</Amount>
             <Text>Experienced tutors</Text>

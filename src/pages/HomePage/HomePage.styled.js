@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const SectionStyle = styled("section")({
@@ -23,7 +24,20 @@ export const Wrapper = styled("div")({
     lineHeight: 0.8,
     fontStyle: "italic",
     fontWeight: 400,
-    backgroundColor: "var(--light-primary1)",
+    backgroundColor: ({ $randomNumber }) => {
+      switch ($randomNumber) {
+        case 0:
+          return "var(--light-primary0)";
+        case 1:
+          return "var(--light-primary1)";
+        case 2:
+          return "var(--light-primary2)";
+        case 3:
+          return "var(--light-primary3)";
+        default:
+          return "var(--light-primary4)";
+      }
+    },
     borderRadius: 8,
   },
 
@@ -31,20 +45,34 @@ export const Wrapper = styled("div")({
     maxWidth: 471,
     marginBottom: 64,
   },
-  "& button": {
-    borderRadius: 12,
-    border: "none",
-    padding: "16px 88px",
-    backgroundColor: "var(--primary1)",
+});
 
-    fontWeight: 700,
-    fontSize: 18,
-    lineHeight: 1.56,
+export const LinkStyle = styled(NavLink)({
+  borderRadius: 12,
+  border: "none",
+  padding: "16px 88px",
+  backgroundColor: ({ $randomNumber }) => {
+    switch ($randomNumber) {
+      case 0:
+        return "var(--primary0)";
+      case 1:
+        return "var(--light-primary1)";
+      case 2:
+        return "var(--light-primary2)";
+      case 3:
+        return "var(--light-primary3)";
+      default:
+        return "var(--light-primary4)";
+    }
   },
+
+  fontWeight: 700,
+  fontSize: 18,
+  lineHeight: 1.56,
 });
 
 export const ListStyle = styled("ul")({
-  backgroundImage: "url(line.svg)",
+  backgroundImage: ({ $randomNumber }) => `url(line${$randomNumber}.svg)`,
   backgroundRepeat: "no-repeat",
   position: "relative",
   width: 1312,
@@ -53,15 +81,11 @@ export const ListStyle = styled("ul")({
   gap: 100,
   padding: "40px 0",
 
-  //   border: "1.50px dashed #f4c550",
   borderRadius: 30,
   "& li": {
     display: "flex",
     gap: 16,
   },
-
-  //   maxWidth: 1312,
-  //   maxHeight: 116,
 });
 export const Amount = styled("p")({
   fontWeight: 500,

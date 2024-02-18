@@ -5,20 +5,20 @@
   --black: #121417;
   --grey: #f8f8f8;
 
-  --primary1: #f4c550;
-  --light-primary1: #fbe9ba;
+  --primary0: #f4c550;
+  --light-primary0: #fbe9ba;
 
-  --primary2: #9fbaae;
-  --light-primary2: #cbded3;
+  --primary1: #9fbaae;
+  --light-primary1: #cbded3;
 
-  --primary3: #9fb7ce;
-  --light-primary3: #bfd6ea;
+  --primary2: #9fb7ce;
+  --light-primary2: #bfd6ea;
 
-  --primary4: #e0a39a;
-  --light-primary4: #f2c0bd;
+  --primary3: #e0a39a;
+  --light-primary3: #f2c0bd;
 
-  --primary5: #f0aa8d;
-  --light-primary5: #f4c8ba;
+  --primary4: #f0aa8d;
+  --light-primary4: #f4c8ba;
 }
 
 body {
